@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import logo from '../logo.svg'
 import '../App.css'
 import fetch from 'isomorphic-fetch'
-import { pathOr } from 'ramda'
-
+import { propOr } from 'ramda'
+import About from '../components/About'
+import Loading from '../components/Loading'
 const url = '/db.json'
 
 class Portfolio extends Component {
@@ -25,14 +26,16 @@ class Portfolio extends Component {
   }
 
   render() {
-    const name = pathOr('', ['about', 'name'], this.state.profileData)
+    const dataLoadingState = propOr(null, 'dataLoadingState', this.state)
+    const profileData = propOr(null, 'profileData', this.state)
+
+    if (dataLoadingState === 'Loading') {
+      return <Loading />
+    }
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title yellow">Welcome, {name}</h1>
-        </header>
+      <div>
+        <About about={profileData.about} />
       </div>
     )
   }
