@@ -3,8 +3,10 @@ import logo from '../logo.svg'
 import '../App.css'
 import fetch from 'isomorphic-fetch'
 import { propOr } from 'ramda'
-import About from '../components/About'
 import Loading from '../components/Loading'
+import About from '../components/About'
+import Projects from '../components/Projects'
+
 const url = '/db.json'
 
 class Portfolio extends Component {
@@ -36,6 +38,7 @@ class Portfolio extends Component {
     return (
       <div>
         <About about={profileData.about} />
+        <Projects portfolio={profileData.portfolio} />
       </div>
     )
   }
