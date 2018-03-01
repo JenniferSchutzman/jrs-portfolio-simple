@@ -43,17 +43,26 @@
     {
       "name": "Project A",
       "desc": "Project A is the first project.",
-      "href": "https://ta.co"
+      "href": "https://ta.co",
+      "img": "/reactwhite.svg"
     },
     {
       "name": "Project B",
       "desc": "Project B is the second project.",
-      "href": "https://ta.co"
+      "href": "https://ta.co",
+      "img": "/react.svg"
     },
     {
       "name": "Project C",
       "desc": "Project C is the third project.",
-      "href": "https://ta.co"
+      "href": "https://ta.co",
+      "img": "https://cdn.worldvectorlogo.com/logos/react.svg"
+    },
+    {
+      "name": "Project D",
+      "desc": "Project D is the fourth project.",
+      "href": "https://ta.co",
+      "img": "/react-thin.png"
     }
   ],
   "skills": [

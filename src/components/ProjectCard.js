@@ -11,7 +11,7 @@ const ProjectCard = props => {
         <div className="tc">
           <DataImage
             className="br-100 h4 w4 dib"
-            source={props.info.imgFile}
+            source={props.info.img}
             alt={props.info.name}
           />
 
