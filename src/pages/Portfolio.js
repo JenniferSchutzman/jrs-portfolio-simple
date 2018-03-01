@@ -5,6 +5,7 @@ import { propOr } from 'ramda'
 import Loading from '../components/Loading'
 import About from '../components/About'
 import Projects from '../components/Projects'
+import Skills from '../components/Skills'
 
 const url = '/db.json'
 
@@ -38,6 +39,7 @@ class Portfolio extends Component {
       <div>
         <About about={profileData.about} />
         <Projects portfolio={profileData.portfolio} />
+        <Skills skills={profileData.skills} />
       </div>
     )
   }
