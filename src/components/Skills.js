@@ -1,5 +1,6 @@
 const React = require('react')
-const SkillCard = require('./SkillCard')
+const SkillItem = require('./SkillItem')
+
 const Skills = props => {
   return (
     <header id="skills" className="tc pv4 pv5-ns bg-white">
@@ -9,7 +10,7 @@ const Skills = props => {
       </h3>
       <div className="cf">
         {props.skills.map((skill, index) => (
-          <SkillCard index={index} key={index} info={skill} />
+          <SkillItem index={index} key={index} item={skill} />
         ))}
       </div>
     </header>

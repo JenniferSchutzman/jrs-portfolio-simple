@@ -17,7 +17,9 @@ class Portfolio extends Component {
       profileData: null
     }
   }
-
+  /* This componentDidMount fetches the data and stores it the portfolio where the state lives
+  Portolio is the parent that bootstraps itself up with its own data.
+  The rest ot the components will be stateless functions */
   componentDidMount() {
     fetch(url)
       .then(res => res.json())
@@ -37,8 +39,8 @@ class Portfolio extends Component {
 
     return (
       <div>
-        <About about={profileData.about} />
-        <Projects portfolio={profileData.portfolio} />
+        <About about={this.state.profileData.about} />
+        <Projects portfolio={this.state.profileData.portfolio} />
         <Skills skills={profileData.skills} />
       </div>
     )

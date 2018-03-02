@@ -1,4 +1,10 @@
 const React = require('react')
+//these below settings are all in TACHYONS format
+///flex items-center  makes items Center
+//justify-center makes text center
+//pa4 padding 4
+//bg-lightest-blue navy" sets the color of the background using techions
+///svg is scalable visual graphics, sclaes made up of data
 
 const Loading = () => {
   return (

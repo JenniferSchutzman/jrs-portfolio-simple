@@ -1,6 +1,10 @@
 const React = require('react')
 const DataImage = require('./DataImage')
 
+//have to use className to give it some css
+// font size 5, font weight of 6
+//in typographcy the bigger the letter, the skinnier it should be, the skinner the letter, the bigger the width should be
+
 const About = props => {
   return (
     <header id="about" className="tc pv4 pv5-ns bg-black">
